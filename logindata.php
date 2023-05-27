@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $count=mysqli_num_rows($result);
     if($count==1){
         $_SESSION['login_user']=$username;
-        header('Location:studentinfo.php');
+        header('Location:studentInfo.php');
     }
     else{
         header('location:home.php');

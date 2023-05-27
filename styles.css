@@ -237,6 +237,9 @@ input{
 .other:focus {
     box-shadow: 0px 0px 0px 3px black;
 }
+.hmb{
+    margin-top:75px; 
+}
 #show{
     display: inline-block;
     outline: 0;

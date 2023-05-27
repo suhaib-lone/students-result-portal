@@ -48,7 +48,21 @@ session_start();
         </div>
 
     </div>
+    <script>
+        let show=document.getElementById("show");
+        let adminCard=document.getElementById("Admincard");
+        let login=document.getElementById("login");
+        let logdiv=document.getElementById("logdiv");
+        show.addEventListener("click",function(e){
+            setTimeout(function(){
+                adminCard.style.height="400px";
+                login.style.display = 'block';
+                },500);
+            logdiv.style.display="none";
+            });
+    </script>
     <script src="script.js"></script>
+
 </body>
 
 </html>

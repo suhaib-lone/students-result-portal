@@ -1,14 +1,25 @@
 <?php
 include('config.php');
+$selectedSess= $_POST['sessional'];
 $roll = $_POST['roll'];
-$iwtmarks = $_POST['iwtmarks'];
-$dmmarks = $_POST['dmmarks'];
-$wrmarks = $_POST['wrmarks'];
-$javamarks = $_POST['javamarks'];
-$ecomarks = $_POST['ecomarks'];
+$AI = $_POST['AI'];
+$BOM = $_POST['BOM'];
+$net = $_POST['net'];
+$ADBMS = $_POST['ADBMS'];
+$MC = $_POST['MC'];
 $mpmarks = $_POST['mpmarks'];
-$conn->query("INSERT IGNORE INTO results(RollNo, iwtmarks, dmmarks, wrmarks, javamarks, ecomarks, mpmarks)
-VALUES('$roll','$iwtmarks','$dmmarks','$wrmarks','$javamarks','$ecomarks','$mpmarks');");
+if($selectedSess=="FIRST"){
+    $conn->query("INSERT IGNORE INTO sessional1(RollNo, AI, BOM, net, ADBMS, MC, mpmarks)
+                VALUES('$roll','$AI','$BOM','$net','$ADBMS','$MC','$mpmarks');");
+}
+elseif($selectedSess=="SECOND"){
+    $conn->query("INSERT IGNORE INTO sessional2(RollNo, AI, BOM, net, ADBMS, MC, mpmarks)
+    VALUES('$roll','$AI','$BOM','$net','$ADBMS','$MC','$mpmarks');");
+}
+else{
+    $conn->query("INSERT IGNORE INTO sessional3(RollNo, AI, BOM, net, ADBMS, MC, mpmarks)
+    VALUES('$roll','$AI','$BOM','$net','$ADBMS','$MC','$mpmarks');");
+}
 
 ?>
 <!DOCTYPE html>

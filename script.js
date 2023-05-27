@@ -22,17 +22,8 @@ function detailVal(){
 }
 
 //---------FOR ADMIN CARD AND LOGIN FORM------------//
-let show=document.getElementById("show");
-let adminCard=document.getElementById("Admincard");
 let login=document.getElementById("login");
-let logdiv=document.getElementById("logdiv");
-show.addEventListener("click",function(e){
-    setTimeout(function(){
-        adminCard.style.height="400px";
-        login.style.display = 'block';
-      },500);
-    logdiv.style.display="none";
-});
+
 function adminval(){
     let username =document.login.username.value;
     let password =document.login.password.value;
@@ -47,3 +38,17 @@ function adminval(){
         return false;
     }
 }
+
+//--------------FOR DOWNLOADING THE RESULT FILE--------------//
+let result = document.getElementById('ResD');
+let saveTxt = document.getElementById('save-txt');
+
+saveTxt.addEventListener("click", ()=>{
+    let blob = new Blob([result.innerText], {type: "text/plain"});
+    let url = URL.createObjectURL(blob);
+    let a = document.createElement("a");
+    a.href=url;
+    a.download="youRes.txt"
+    a.click();
+
+})

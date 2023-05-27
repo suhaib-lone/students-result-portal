@@ -1,5 +1,6 @@
 <?php
-$name="localhost";
+
+$name="localhost:3308";
 $uname="root";
 $pwd="";
 $dbname="kgpit";

@@ -19,11 +19,17 @@ session_start();
             <div style="padding:15px">
                 <label for="rollNum" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">Roll Number:</label><br>
                 <input type="number" name="rollNum" placeholder="eg., 20112"><br>
+                <label for="chooseSess" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">Select Sessional:</label><br>
+                <select name="chooseSess" >
+                    <option value="FIRST">FIRST</option>
+                    <option value="SECOND">SECOND</option>
+                    <option value="THIRD">THIRD</option>
+                </select><br>
                 <input type="submit" value="Submit" id="sub">
                 
             </div>
         </form>
-        <button onClick="location.href='home.php'" class="other" style="width:100px;font-size: 16px;padding-left:25px;position:relative;left:60%;bottom:170px">HOME</button>
+        <button onClick="location.href='home.php'" class="other hmb" style="width:100px;font-size: 16px;padding-left:25px;position:relative;left:60%;bottom:170px">HOME</button>
 
     </div>
 

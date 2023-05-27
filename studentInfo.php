@@ -29,36 +29,43 @@ else {
                 <div style="background-color:antiquewhite;margin-bottom:0px;width: fit-content;border:2px solid rgb(252, 235, 215);box-shadow: 7px 2px 0px 8px rgba(252, 235, 215, 64, 0.75);">
                     <label for="roll" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">Roll Number</label>
                     <input type="number" name="roll" placeholder="eg., 20112" style="border-width:0px;border-left: 5px; ;border-style:groove;outline:none;padding:10px;background-color:rgb(236, 225, 214) ;"><br>
+                    
+                    <label for="sessional" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">Select Sessional:</label>
+                    <select name="sessional"  style="border-width:0px;border-left: 0px; ;border-style:groove;outline:none;padding:10px;background-color:rgb(236, 225, 214) ;">
+                        <option value="FIRST">FIRST</option>
+                        <option value="SECOND">SECOND</option>
+                        <option value="THIRD">THIRD</option>
+                    </select><br>
                 </div>
 
                 <div id="subjects">
                     <div class="subjs">
-                        <label for="iwtmarks" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">IWT</label>
-                        <input type="text" name="iwtmarks" placeholder="eg., 80/100 or 80%"><br>
+                        <label for="AI" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">AI</label>
+                        <input type="text" name="AI" placeholder="eg., 80/100 or 80%"><br>
                     </div>
 
                     <div class="subjs">
-                        <label for="dmmarks" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">DATA MINING</label>
-                        <input type="text" name="dmmarks" placeholder="eg., 80/100 or 80%"><br>
+                        <label for="BOM" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">BOM</label>
+                        <input type="text" name="BOM" placeholder="eg., 80/100 or 80%"><br>
                     </div>
 
                     <div class="subjs">
-                        <label for="wrmarks" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">WIRELESS</label>
-                        <input type="text" name="wrmarks" placeholder="eg., 80/100 or 80%"><br>
+                        <label for="net" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">.NET</label>
+                        <input type="text" name="net" placeholder="eg., 80/100 or 80%"><br>
                     </div>
 
                     <div class="subjs">
-                        <label for="javamarks" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">JAVA</label>
-                        <input type="text" name="javamarks" placeholder="eg., 80/100 or 80%"><br>
+                        <label for="ADBMS" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">ADBMS</label>
+                        <input type="text" name="ADBMS" placeholder="eg., 80/100 or 80%"><br>
                     </div>
 
                     <div class="subjs">
-                        <label for="ecomarks" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">E-COM</label>
-                        <input type="text" name="ecomarks" placeholder="eg., 80/100 or 80%"><br>
+                        <label for="MC" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">MC</label>
+                        <input type="text" name="MC" placeholder="eg., 80/100 or 80%"><br>
                     </div>
 
                     <div class="subjs">
-                        <label for="mpmarks" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">MINOR PROJECT</label>
+                        <label for="mpmarks" style="color:rgb(22, 46, 54);font-family:sans-serif;font-weight: bold;">MAJOR PROJECT</label>
                         <input type="text" name="mpmarks" placeholder="eg., 80/100 or 80%"><br>
                     </div>
 
