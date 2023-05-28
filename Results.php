@@ -48,27 +48,37 @@ $conn->close();
             </tr>
             <tr>
                 <th>AI</th>
-                <th><?php echo $row["AI"]; ?></th>
+                <th><?php echo $row["AI"];
+                    $ai=$row["AI"]; ?></th>
             </tr>
             <tr>
                 <th>BOM</th>
-                <th><?php echo $row["BOM"]; ?></th>
+                <th><?php echo $row["BOM"];
+                $bom=$row["BOM"]; ?></th>
             </tr>
             <tr>
                 <th>net</th>
-                <th><?php echo $row["net"]; ?></th>
+                <th><?php echo $row["net"];
+                $nett=$row["net"]; ?></th>
             </tr>
             <tr>
                 <th>ADBMS</th>
-                <th><?php echo $row["ADBMS"]; ?></th>
+                <th><?php echo $row["ADBMS"];
+                $adbms=$row["ADBMS"]; ?></th>
             </tr>
             <tr>
                 <th>MC</th>
-                <th><?php echo $row["MC"]; ?></th>
+                <th><?php echo $row["MC"];
+                $mc=$row["MC"]; ?></th>
             </tr>
             <tr>
                 <th>Major Project</th>
-                <th><?php echo $row["mpmarks"]; ?></th>
+                <th><?php echo $row["mpmarks"];
+                (int)$mp=$row["mpmarks"]; ?></th>
+            </tr>
+            <tr>
+                <th>TOTAL</th>
+                <th><?php echo ((int)$ai+(int)$mp+(int)$mc+(int)$adbms+(int)$nett+(int)$bom);?></th>
             </tr>
 
         </table>
