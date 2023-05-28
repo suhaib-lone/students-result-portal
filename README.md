@@ -1,0 +1,3 @@
+# students-result-portal
+!This is just a college project i am doing....
+This is a simple result portal where teachers can upload results of students and students can view their results.
